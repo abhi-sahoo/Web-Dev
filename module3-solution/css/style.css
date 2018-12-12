@@ -1,0 +1,42 @@
+.navbar{
+	background-color: #92A7A9;
+}
+.navbar-brand {
+	font-size: 40px;
+	font-family: oxygen, serif;
+	padding-left: 20px;
+}
+.nav-item{
+	font-size: 20px;
+	font-family: oxygen, serif;
+	background-color: #BBD6D7  ;
+}
+.nav-item a:hover{
+	background-color: white;
+}
+#Menu{
+	margin-top: 20px;
+}
+.box{
+	background-color: #AEB6BF   ;
+	margin-top: 30px;
+}
+.box-name{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+p {
+   width: 95%; height: 100%; margin-right: auto; margin-left: auto; 
+  margin-top: 10px; margin-bottom: 20px; font-family: Arial; color: black;
+  padding-bottom: 10px;
+}
+
+ button.navbar-toggle, {
+  border: 1px solid #61122f;
+}
+button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
