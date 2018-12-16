@@ -24,9 +24,15 @@
 // 'byeSpeaker' on the global scope as well.
 // xxxx.xxxx = byeSpeaker;
 
-export class SpeakGoodBye extends SpeakHello{
-  constructor(name){
-    super(name);
-    this.speakWord = 'Good Bye';
-  }
-}
+(function (window) {
+
+	var speakWord = "Good Bye";
+
+	function speak(name) {
+	  console.log(speakWord + " " + name);
+	}
+
+	var byeSpeaker = speak;
+	window.byeSpeaker = byeSpeaker;
+
+})(window);
