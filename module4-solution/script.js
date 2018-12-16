@@ -22,14 +22,23 @@ Hello Laura
 Good Bye Jim
 */
 
-var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-var instance;
-names.forEach(function (element) {
-  if (element.charAt(0).toLowerCase() == 'j') {
-    instance = new SpeakHello(element);
+(function(window) {
+
+  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+  for (name in names) {
+
+    var firstLetter = names[name][0];
+
+    if (firstLetter ===  "J" || firstLetter === "j") {
+
+      byeSpeaker(names[name]); 
+
+    } 
+    else {
+
+      helloSpeaker(names[name]); 
+
+    }
   }
-  else {
-    instance = new SpeakGoodBye(element);
-  }
-  instance.speak();
-});
+})();
