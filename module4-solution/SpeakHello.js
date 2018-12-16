@@ -22,12 +22,15 @@
 // See Lecture 52, part 2
 // (Note, Step 6 will be done in the SpeakGoodBye.js file.)
 // xxxx.xxxx = speak;
-export class SpeakHello{
-  constructor(name){
-    this.name= name;
-    this.speakWord = "Hello";
-  }
-  speak(){
-    console.log(this.speakWord+ " " + this.name);
-  }
-}
+(function (window) {
+
+	var speakWord = "Hello";
+
+	function speak (name) {
+  		console.log(speakWord + " " + name);
+	}
+
+	var helloSpeaker = speak;
+	window.helloSpeaker = helloSpeaker;
+
+})(window);
